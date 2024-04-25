@@ -1,6 +1,6 @@
 # Projeto Spider Man Multiverse
 
-Projeto que desenvolvi com plataforma DIO, focado em HTML, CSS e JS puro
+Projeto que desenvolvi com plataforma DIO, focado em HTML, CSS e JS puro. Fiz algumas alterações que achei necessárias.
 
 ## Descrição do projeto
 

@@ -4,7 +4,7 @@
 @import url('./componets/_pills.css');
 @import url('./componets/_link-button.css');
 @import url('./componets/_gallery.css');
-@import url('./internal.css');
+
 
 .s-wrapper {
   display: flex;

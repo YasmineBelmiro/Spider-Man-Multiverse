@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spider-Man:Multiverse</title>
   <link rel="stylesheet" href="./css/home-page-styles.css" />
-  <script src="./scripts/card-hover-animations.js"></script>
+  <script src="./scripts/script.js"></script>
 </head>
 
 <body>
   <nav class="s-menu">
     <ul>
-    
+
       <li class="s-menu__item">
         <a href="./pages/tobey-maguire/spiderman1.html">Tobey Maguire</a>
       </li>
@@ -22,7 +22,7 @@
       </li>
 
       <li class="s-menu__item s-menu__icon">
-       <a href="./index.html"> <img src="./images/icons/spider.svg" alt="Spider Man Multiverse" /></a>
+        <a href="./index.html"> <img src="./images/icons/spider.svg" alt="Spider Man Multiverse" /></a>
       </li>
       <li class="s-menu__item">
         <a href="./pages/tom-holland/spiderman1.html">Tom Holland</a>
@@ -30,36 +30,47 @@
       <li class="s-menu__item">
         <a href="./pages/miles-morales/spiderman1.html">Miles Morales</a>
       </li>
-      
+
     </ul>
   </nav>
   <div class="s-container">
-    <a href="#" class="s-card" id="spider-man-01">
-      <img class="s-card__background" src="./images/pic-sm-bg-01.jpg" alt="" />
-      <img class="s-card__image" src="./images/spider-man-01.png" alt="Tobey Maguire" />
-      <h2 class="s-card__title">Tobey Maguire</h2>
-    </a>
-    <a href="#" class="s-card" id="spider-man-02">
-      <img class="s-card__background" src="./images/pic-sm-bg-03.jpg" alt="" />
-      <img class="s-card__image" src="./images/spider-man-03.png" alt="Andrew Garfield" />
-      <h2 class="s-card__title">Andrew Garfield</h2>
-    </a>
-    <a href="#" class="s-card" id="spider-man-03">
-      <img class="s-card__background" src="./images/pic-sm-bg-02.jpg" alt="" />
-      <img class="s-card__image" src="./images/spider-man-02.png" alt="Tom Holland" />
-      <h2 class="s-card__title">Tom Holland</h2>
-    </a>
-    <a href="#" class="s-card" id="spider-man-04">
-      <img class="s-card__background" src="./images/pic-sm-bg-04.jpg" alt="" />
-      <img class="s-card__image" src="./images/spider-man-04.png" alt="Tobey Maguire" />
-      <h2 class="s-card__title">Miles Morales</h2>
-    </a>
+    <div class="s-cards-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+      <a href="./pages/tobey-maguire/spiderman1.html" class="s-card" id="spider-man-01">
+        <img class="s-card__background" src="./images/pic-sm-bg-01.jpg" alt="" />
+        <img class="s-card__image" src="./images/spider-man-01.png" alt="Tobey Maguire" />
+        <h2 class="s-card__title">Tobey Maguire</h2>
+      </a>
+      <a href="./pages/andrew-garfield/spiderman1.html" class="s-card" id="spider-man-02">
+        <img class="s-card__background" src="./images/pic-sm-bg-03.jpg" alt="" />
+        <img class="s-card__image" src="./images/spider-man-03.png" alt="Andrew Garfield" />
+        <h2 class="s-card__title">Andrew Garfield</h2>
+      </a>
+      <a href="./pages/tom-holland/spiderman1.html" class="s-card" id="spider-man-03">
+        <img class="s-card__background" src="./images/pic-sm-bg-02.jpg" alt="" />
+        <img class="s-card__image" src="./images/spider-man-02.png" alt="Tom Holland" />
+        <h2 class="s-card__title">Tom Holland</h2>
+      </a>
+      <a href="./pages/miles-morales/spiderman1.html" class="s-card" id="spider-man-04">
+        <img class="s-card__background" src="./images/pic-sm-bg-04.jpg" alt="" />
+        <img class="s-card__image" src="./images/spider-man-04.png" alt="Tobey Maguire" />
+        <h2 class="s-card__title">Miles Morales</h2>
+      </a>
+    </div>
+
   </div>
   <div class="s-controller">
-    <div class="s-controller__button s-controller__button--active">01</div>
-    <div class="s-controller__button">02</div>
-    <div class="s-controller__button">03</div>
-    <div class="s-controller__button">04</div>
+    <div id="1" onclick="selectCarouselItem(this)" class="s-controller__button s-controller__button--active">
+      01
+    </div>
+    <div id="2" onclick="selectCarouselItem(this)" class="s-controller__button">
+      02
+    </div>
+    <div id="3" onclick="selectCarouselItem(this)" class="s-controller__button">
+      03
+    </div>
+    <div id="4" onclick="selectCarouselItem(this)" class="s-controller__button">
+      04
+    </div>
     <div class="s-controller__line"></div>
   </div>
 </body>
